@@ -1,10 +1,8 @@
 var Module = {
-  'print': function(text){ 
-    console.log('From app: ' + text) 
-  },
-  'preRun' : function(){
+  'preRun' : function() {
     console.log('prerun');
-    FS.createDataFile('/', 'input.txt', 'Hello webassembly', true, true, true);
+    // TODO: check is bundle exist
+    // FS.createDataFile('/', 'bundle.min.js', 'Hello webassembly', true, true, true);
   },
   'noInitialRun': true,
 };

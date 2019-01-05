@@ -6,10 +6,8 @@
     <script type="text/javascript" src="init.js"></script>
     <script type="text/javascript" src="HelloWebassembly.js"></script>
     <script type="text/javascript">
-        function f() {
-            Module['callMain'](['/input.txt']);
-            Module['callMain'](['/not-existing-file.abc']); // Will fail to open
-            Module['callMain']([]); // Will log: "usage: ./this.program path"
+        function runExtract() {
+            Module['callMain'](['/bundle.min.js']);
         }
         setTimeout(f, 1000);
     </script>
