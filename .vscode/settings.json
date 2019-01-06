@@ -1,0 +1,8 @@
+{
+  "files.associations": {
+    "ucl_asm.h": "c",
+    "portab.h": "c",
+    "uclconf.h": "c",
+    "ucl.h": "c"
+  }
+}
