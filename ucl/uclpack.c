@@ -34,11 +34,11 @@
 // starting point for adaption for you applications.
 **************************************************************************/
 
-// #include <ucl/ucl.h>
-#include "/usr/local/include/ucl/ucl.h"
+#include <ucl/ucl.h>
+// #include "/usr/local/include/ucl/ucl.h"
 #if defined(UCL_USE_ASM)
-// #  include <ucl/ucl_asm.h>
-#include "/usr/local/include/ucl/ucl_asm.h"
+#  include <ucl/ucl_asm.h>
+// #include "/usr/local/include/ucl/ucl_asm.h"
 #endif
 #if 1 && defined(UCL_USE_ASM)
    /* use assembler versions of the decompressors */
