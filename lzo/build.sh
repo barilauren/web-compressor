@@ -3,4 +3,4 @@
 rm -rf build
 mkdir build
 source /Users/ivankalagin/Documents/tmp/emsdk/emsdk_env.sh
-emcc -o build/index.html file.c -O3 -s WASM=1 -s NO_EXIT_RUNTIME=1 --shell-file template.html --preload-file bundle/target.compressed.js
+emcc decompressor.cpp minilzo.c -o build/index.html -O3 -s WASM=1 -s EXPORTED_FUNCTIONS='["_main"]' --shell-file template.html --preload-file bundle/target.compressed.js

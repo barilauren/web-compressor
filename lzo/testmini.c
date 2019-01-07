@@ -82,7 +82,7 @@ int main(int argc, char *argv[])
         return 0;
 	FILE * fp_in , * fp_out;
     
-
+    printf("run\n");
 /*
  * Step 1: initialize the LZO library
  */
